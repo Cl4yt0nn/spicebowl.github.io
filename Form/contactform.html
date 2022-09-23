@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family:'Roboto Slab',sans-serif;
+    }
+    legend {
+        text-align:center;
+        font-size:30px;
+    }
+    form {
+        width:750px;
+        margin:auto;
+    }
+    input {
+        width:100%;
+        height:26px;
+        font-size:16px;
+        border:3px solid black;
+    }
+    textarea {
+        width:100%;
+        border:3px solid black;
+    }
+    fieldset {
+        border:3px solid black;
+    }
+    #submit {
+        height:50px;
+        width:125px;
+        margin-left:300px;
+        background:#d5d5d5;
+    }
+    #submit:hover {
+        background:#bebebe;
+        cursor:pointer;
+    }
+</style>
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact Form</legend>
+            <label for="name">Full Name: </label><br>
+            <input type="text" id="name" placeholder="John Doe"><br><br>
+
+            <label for="email">Email: </label><br>
+            <input type="text" id="email" placeholder="johndoe@website.com"><br><br>
+
+            <label for="subject">Subject: </label><br>
+            <input type="text" id="subject" placeholder="Ex: Question, Fan Mail, Purpose"><br><br>
+
+            <label for="message">Message: </label><br>
+            <textarea id="message" rows="10"></textarea><br><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

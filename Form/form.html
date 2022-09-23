@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="/Form/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form id="fm">
+        <fieldset class="bg">
+            <legend>Information</legend>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" maxlength="4" placeholder="2022"><br><br>
+
+            <!--Name-->
+            <fieldset>
+                <legend>Name</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="John"><br><br>
+
+                <label for="mname">Middle Name:</label><br>
+                <input type="text" id="mname" name="mname" placeholder="Reese"><br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+            </fieldset>
+            <br>
+
+            <!--Gender-->
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </fieldset>
+            <br>
+
+            <!--Ethnicity-->
+            <fieldset>
+                <legend for="ethn">Ethnicity</legend>
+                <input type="text" id="ethn" name="ethnicity" placeholder="African American, Pacific Islander, White, Asian...">
+            </fieldset>
+            <br>
+
+            <!--Age-->
+            <fieldset>
+                <legend>Age</legend>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="21"><br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dateOfBirth">
+            </fieldset>
+            <br>
+
+            <!--Address-->
+            <fieldset>
+                <legend>Address</legend>
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" placeholder="123 Sesame St."><br><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="New York"><br><br>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="NY"><br><br>
+                <label for="zip">Zipcode:</label>
+                <input type="text" id="zip" name="zipcode" placeholder="54321"><br><br>
+            </fieldset>
+            <br>
+
+            <!--Grade-->
+            <fieldset>
+                <legend>Grade</legend>
+                <label for="school">School:</label>
+                <input type="text" id="school" name="school" placeholder="Summer High School..."><br><br>
+                <input type="radio" id="fresh" name="grade">
+                <label for="fresh">Freshman</label><br>
+
+                <input type="radio" id="soph" name="grade">
+                <label for="soph">Sophomore</label><br>
+
+                <input type="radio" id="jun" name="grade">
+                <label for="jun">Junior</label><br>
+
+                <input type="radio" id="sen" name="grade">
+                <label for="sen">Senior</label>
+            </fieldset>
+            <br>
+
+            <!--Contact Information-->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@google.com"><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phonenumber" placeholder="123-456-7890"><br><br>
+                
+                <label for="ecn">Emergency Contact Number:</label>
+                <input type="number" id="ecn" name="emergency" placeholder="098-765-4321"><br><br>
+
+            </fieldset>
+            <br>
+
+            <!--Program-->
+            <fieldset>
+                <legend>Program</legend>
+                <label for="pname">Program Name:</label>
+                <input type="text" id="pname" name="programName" placeholder="Coding, Drone Technology, Welding..."><br><br>
+
+                <label for="enroll">Date Enrolled:</label>
+                <input type="date" id="enroll" name="enrollDate"><br><br>
+
+                <label for="grad">Program Graduation Date:</label>
+                <input type="date" id="grad" name="graduation"><br><br>
+
+                <label for="grad2">School Graduation Date:</label>
+                <input type="date" id="grad2" name="schoolGraduation"><br><br>
+            </fieldset>
+
+            <p id="suggest"> * Ensure every box is filled in before submitting. *</p>
+            <input type="submit" id="submit">
+    </form>
+</body>
+<script src="/Form/form.js"></script>
+</html>

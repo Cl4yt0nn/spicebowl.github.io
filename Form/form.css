@@ -1,0 +1,69 @@
+* {
+    font-family:'Roboto Slab', sans-serif;
+}
+body {
+    background:#82b8af;
+    animation:changeBG 10s infinite 
+}
+h1 {
+    display:block;
+    margin:auto;
+    background:white;
+    border:1px solid black;
+    padding:5px;
+    width:400px;
+    margin-bottom:10px;
+}
+#fm {
+    width:700px;
+    height:100%;
+    text-align:left;
+    margin:auto;
+    font-size:24px;
+}
+legend {
+    padding:5px;
+}
+input:not(#male):not(#female):not(#fresh):not(#soph):not(#jun):not(#sen) {
+    width:100%;
+    height:30px;
+    font-size:20px;
+    border:1px solid black;
+}
+#male, #female, #fresh, #soph, #jun, #sen {
+    width:15px;
+    height:15px;
+}
+.bg {
+    background:#c5f5ff;
+    border:1px solid black;
+}
+fieldset:not(.bg) {
+    background:white;
+    border:1px solid black;
+}
+legend {
+    background:white;
+    border:1px solid black;
+}
+#submit {
+    display:block;
+    width:150px !important;
+    height:60px !important;
+    padding:15px;
+    margin:auto;
+    margin-top:15px;
+    background:#FFFFFF;
+    margin-bottom:5px;
+}
+#submit:hover {
+    background:#d5d5d5;
+    cursor:pointer;
+}
+#suggest {
+    text-align:center;
+    opacity:50%;
+}
+input:hover::placeholder {
+    opacity:70%;
+}
